@@ -1,0 +1,23 @@
+.projectCard{
+    padding: 30px;
+}
+.projectCardTittle{
+    margin-bottom: 30px;
+}
+.projectCardBody{
+    display: flex;
+    gap: 40px;
+}
+.projectCardBodyImage{
+    width: 50%;
+    border-radius: 10px;
+}
+.projectCardBodyDetail{
+
+}
+.projectCardBodyDetailContext{
+    margin-bottom: 20px;
+}
+.projectCardBodyDetailFunction{
+    line-height : 25px
+}

@@ -1,0 +1,65 @@
+.experienceCard{
+    width: 100%;
+    display: flex;
+}
+.sideBar{
+    width: 10%;
+    position: relative;
+}
+.verticalBar{
+    width: 10px;
+    height: 102%;
+    left: 51%;
+    position: absolute;
+    background-color: #f2f3f7;
+    border-radius: 20px;
+}
+.verticalBarHead{
+    width: 50px;
+    height: 50px;
+    left: 29%;
+    position: absolute;
+    background-color: #f2f3f7;
+    border-radius: 100%;
+    
+}
+.verticalBarHeadIcon{
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    background-color: skyblue;
+}
+.speehBubble{
+    width: 90%;
+    position: relative; 
+    padding: 20px 20px 40px 20px;
+    background-color: #f2f3f7;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    
+}
+/* 말풍선 꼬리 */
+.speehBubble::after {
+    content:""; 
+    position: absolute; 
+    top: 15px; 
+    left: -15px; 
+    border-right: 15px solid #f2f3f7; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.speehBubbleTittle{
+    margin-bottom: 30px;
+}
+.speehBubbleContent{
+    
+}
+.reactIcon{
+    left: 20%;
+    top: 20%;
+    position: absolute;
+
+}

@@ -1,0 +1,23 @@
+.experience{
+    width: 100%;
+    height: 100%;
+}
+.endCard{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.verticalBarEndPoint{
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    background-color: white;
+}
+.blank{
+    width: 90%;
+    position: relative; 
+    background-color: #fff;
+}

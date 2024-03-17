@@ -3,7 +3,7 @@ import "../css/Header.css";
 function Haeder() {
     return (
       <div className="header">
-        <div className="tittle">
+        <div className="logo">
           <p><a>시권's Portfolio</a></p>
         </div>
         <ul className="menu">

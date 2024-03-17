@@ -1,0 +1,10 @@
+.tittle{
+    width :30%;
+    font-size: 30px;
+    font-weight: bold;
+    margin : 100px auto 30px;
+    border-bottom: 0.5px solid #2f3134;
+}
+.tittleText{
+    margin-bottom: 15px;
+}
