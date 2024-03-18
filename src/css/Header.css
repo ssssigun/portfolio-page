@@ -14,12 +14,16 @@
     /* 뺄까 고민중 */
     box-shadow: 0 1px 0.3rem hsla(0,0%,80%,.8); 
 }
-.logo > p, .menu > li > p{
+.menuText{
     line-height: 80px;
+    font-size: 15px;
 }
 .logo{
     width: 13%;
     font-size: 30px;
+}
+.logo > p{
+    line-height: 80px;
 }
 .menu{
     display: flex;

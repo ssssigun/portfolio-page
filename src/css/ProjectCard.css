@@ -2,22 +2,57 @@
     padding: 30px;
 }
 .projectCardTittle{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+.projectCardTittleMain{
+    font-size: 25px;
+    font-weight: bold;
+}
+.projectCardTittleSub{
+    font-size: 15px;
+    color: gray;
 }
 .projectCardBody{
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    width: 100%;
+}
+.projectCardBodyImageArea{
+    width: 50%;
+    display: flex;
 }
 .projectCardBodyImage{
     width: 50%;
-    border-radius: 10px;
+    height: 100%;
+    /* box-sizing: border-box; */
+    border-radius: 20px;
+    margin: 20px
 }
 .projectCardBodyDetail{
-
+    width: 50%;
 }
 .projectCardBodyDetailContext{
     margin-bottom: 20px;
 }
+.projectCardBodyDetailContext :first-child{
+    margin-bottom: 20px;
+}
 .projectCardBodyDetailFunction{
-    line-height : 25px
+    line-height : 25px;
+    border-top: 0.5px solid #000;
+    padding-top: 20px;
+}   
+.detailFunction{
+    display: flex;
+    margin-bottom: 15px;
+}
+.detailFunctionCategory{
+    font-weight: bold;
+    width: 25%;
+}
+.detailFunctionCategory > span{
+    margin-left: 5px;
+}
+.detailFunctionExplain{
+    width: 75%
 }

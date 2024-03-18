@@ -1,13 +1,16 @@
 import "../css/ExperienceCard.css";
 
 import { GoBook } from "react-icons/go";
-function ExperienceCard() {
+function ExperienceCard({color, title, period, detail}) {
+  const headColor ={
+    backgroundColor : color
+  }
     return (
       <div className="experienceCard">
         <div className="sideBar">
           <div className="verticalBar"/>
           <div className="verticalBarHead">
-            <div className="verticalBarHeadIcon">
+            <div className="verticalBarHeadIcon" style={headColor}>
               <GoBook className="reactIcon" size={25} color="white"/>
             </div>
           </div>
@@ -15,18 +18,11 @@ function ExperienceCard() {
         </div>
         <div className="speehBubble">
           <div className="speehBubbleTittle">
-            <span>신한 DS 금융 SW아카데미</span>
-            <span>2023.02 ~ 2023.08</span>
+            <span className="speehBubbleName commonTittle">{title}</span>
+            <span className="commonSubTittle">{period}</span>
           </div>
-          <p className="speehBubbleContent">
-              저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-              저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-              저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-              저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-              저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-              저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-              저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-              저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
+          <p className="commonDetail">
+            {detail}
           </p>
         </div>
       </div>

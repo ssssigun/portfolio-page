@@ -1,33 +1,55 @@
 import "../css/ProjectCard.css";
 import { FaCheck } from "react-icons/fa";
 
-function ProjectCard() {
+function ProjectCard({tittle, period, img, detail1, detail2}) {
     return (
       <div className="projectCard">
         <div className="projectCardTittle">
-          <p> 웹 오목 </p>
-          <p> 2023.05.01 ~ 2023.06.01 (6인 팀 프로젝트)</p>
+          <p className="projectCardTittleMain">{tittle}</p>
+          <p className="projectCardTittleSub"> {period}</p>
         </div>
         <div className="projectCardBody">
-          <img src = {`${process.env.PUBLIC_URL}/img/omokMain.png`} className="projectCardBodyImage"></img>
+          <img src = {`${process.env.PUBLIC_URL}/img/${img}`} className="projectCardBodyImage"></img>
           <div className="projectCardBodyDetail">
             <div className="projectCardBodyDetailContext">
-              <p>
-                저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-                저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
+              <p className="commonDetail">
+                {detail1}
               </p>
-              <p>
-                저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
-                저는 이렇게이렇게 해서 이걸 할 수 있습니다. 저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다  저는 이렇게이렇게 해서 이걸 할 수 있습니다
+              <p className="commonDetail">
+                {detail2}
               </p>
             </div>
             <ul className="projectCardBodyDetailFunction">
-              <li> <FaCheck/>저는 이렇게이렇게 해서 이걸 할 수 있습니다.</li>
-              <li> <FaCheck/>저는 이렇게이렇게 해서 이걸 할 수 있습니다.</li>
-              <li> <FaCheck/>저는 이렇게이렇게 해서 이걸 할 수 있습니다.</li>
-              <li> <FaCheck/>저는 이렇게이렇게 해서 이걸 할 수 있습니다.</li>
-              <li> <FaCheck/>저는 이렇게이렇게 해서 이걸 할 수 있습니다.</li>
-              <li> <FaCheck/>저는 이렇게이렇게 해서 이걸 할 수 있습니다.</li>
+              <li className="detailFunction commonDetail">
+                <div className="detailFunctionCategory">
+                  <FaCheck/> <span>주요 기능</span>
+                </div>
+                <span className="detailFunctionExplain">저는 이렇게이렇게 해서 이걸 할 수 있습니다.</span>
+              </li>
+              <li className="detailFunction commonDetail">
+                <div className="detailFunctionCategory">
+                  <FaCheck/> <span>Frontend</span>
+                </div>
+                <span className="detailFunctionExplain">저는 이렇게이렇게 해서 이걸 할 수 있습니다.</span>
+              </li>
+              <li className="detailFunction commonDetail">
+                <div className="detailFunctionCategory">
+                  <FaCheck/> <span>Backend</span>
+                </div>
+                <span className="detailFunctionExplain">저는 이렇게이렇게 해서 이걸 할 수 있습니다.</span>
+              </li>
+              <li className="detailFunction commonDetail">
+                <div className="detailFunctionCategory">
+                  <FaCheck/> <span>Database</span>
+                </div>
+                <span className="detailFunctionExplain">저는 이렇게이렇게 해서 이걸 할 수 있습니다.</span>
+              </li>
+              <li className="detailFunction commonDetail">
+                <div className="detailFunctionCategory">
+                  <FaCheck/> <span>Github</span>
+                </div>
+                <span className="detailFunctionExplain">저는 이렇게이렇게 해서 이걸 할 수 있습니다.</span>
+              </li>
             </ul>
           </div>
         </div>

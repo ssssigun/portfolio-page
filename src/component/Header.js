@@ -4,23 +4,23 @@ function Haeder() {
     return (
       <div className="header">
         <div className="logo">
-          <p><a>시권's Portfolio</a></p>
+          <p><a href="#">시권's Portfolio</a></p>
         </div>
         <ul className="menu">
           <li>
-            <p> About Me </p>
+            <p className="menuText"> About Me </p>
           </li>
           <li>
-            <p> Tech Skill </p>
+            <p className="menuText"> Tech Skill </p>
           </li>
           <li>
-            <p> Projects </p>
+            <p className="menuText"> Projects </p>
           </li>
           <li>
-            <p> Experience </p>
+            <p className="menuText"> Experience </p>
           </li>
           <li>
-            <p> Contact </p>
+            <p className="menuText"> Contact </p>
           </li>
         </ul>
       </div>

@@ -53,9 +53,10 @@
 }
 .speehBubbleTittle{
     margin-bottom: 30px;
+    text-align: left;
 }
-.speehBubbleContent{
-    
+.speehBubbleName{
+    margin-right: 20px;
 }
 .reactIcon{
     left: 20%;

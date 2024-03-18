@@ -13,3 +13,17 @@
   height: 100%;
   margin: 0 auto;
 }
+.commonTittle{
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+.commonDetail{
+  text-align: left;
+  font-size: 15px;
+}
+.commonSubTittle{
+  text-align: left;
+  font-size: 15px;
+  color: gray;
+}
