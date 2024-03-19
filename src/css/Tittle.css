@@ -2,7 +2,8 @@
     width :30%;
     font-size: 30px;
     font-weight: bold;
-    margin : 100px auto 30px;
+    margin : 0px auto 30px;
+    padding-top: 100px;
     border-bottom: 0.5px solid #2f3134;
 }
 .tittleText{

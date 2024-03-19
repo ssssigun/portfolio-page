@@ -7,11 +7,13 @@ import { FaGraduationCap } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiBloglovin } from "react-icons/si";
 import Tittle from "../component/Tittle.js";
-function AboutMe() {
+import { forwardRef } from "react";
+
+const AboutMe = forwardRef((props, ref) => {
   const infoSize = 25;
   const snsSize = 30;
     return (
-      <div className="aboutMe">
+      <div className="aboutMe" ref={aboutMeRef => (ref.current[0] = aboutMeRef)}>
         <Tittle tittle ={"ABOUT ME"}/>
         <div className="aboutMeBody">
           <div className="pictureArea">
@@ -58,6 +60,6 @@ function AboutMe() {
         </div>
       </div>
     );
-  }
+  }); 
   
   export default AboutMe;

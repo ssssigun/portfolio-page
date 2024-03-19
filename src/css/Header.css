@@ -11,12 +11,12 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0 40px;
-    /* 뺄까 고민중 */
     box-shadow: 0 1px 0.3rem hsla(0,0%,80%,.8); 
 }
 .menuText{
     line-height: 80px;
     font-size: 15px;
+    cursor: pointer;
 }
 .logo{
     width: 13%;
@@ -28,4 +28,8 @@
 .menu{
     display: flex;
     gap : 40px;
+}
+.checked{
+    font-weight: bold;
+    border-bottom: 2px solid #000;
 }
