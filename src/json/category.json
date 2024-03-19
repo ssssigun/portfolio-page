@@ -1,0 +1,27 @@
+[
+    {
+        "idx": 0,
+        "name": "About Me",
+        "className" : "aboutMe"
+    },
+    {
+        "idx" : 1,
+        "name" : "Tech Skill" ,
+        "className" : "techSkill"
+    },
+    {
+        "idx" : 2,
+        "name" : "Projects" ,
+        "className" : "pr"
+    },
+    {
+        "idx" : 3,
+        "name" : "Experience" ,
+        "className" : "experience"
+    },
+    {
+        "idx" : 4,
+        "name" : "Contact" ,
+        "className" : "contact"
+    }
+]

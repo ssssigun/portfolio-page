@@ -26,26 +26,26 @@ const AboutMe = forwardRef((props, ref) => {
                 <p className="commonDetail"> 이시권 </p>
               </li>
               <li className="info">
-                <FaBirthdayCake size={infoSize}/>
+                <FaBirthdayCake size={infoSize} className="infoIcon"/>
                 <p className="commonDetail"> 1999.01.17  ( 만 25세 )</p>
               </li>
               <li className="info">
-                <FaHome size={infoSize}/>
+                <FaHome size={infoSize} className="infoIcon"/>
                 <p className="commonDetail"> 대전광역시 유성구 </p>
               </li>
               <li className="info">
-                <IoIosMail size={infoSize}/>
+                <IoIosMail size={infoSize} className="infoIcon"/>
                 <p className="commonDetail"> hoo2389@gmail.com </p>
               </li>
               <li className="info">
-                <FaGraduationCap size={infoSize}/>
+                <FaGraduationCap size={infoSize} className="infoIcon"/>
                 <p className="commonDetail"> 한남대학교  ( 전기전자공학과 ) </p>
               </li>
             </ul>
             <ul className="sns">
               <li>
                 <a href="https://github.com/ssssigun">
-                  <FaGithub size={snsSize}/>
+                  <FaGithub size={snsSize} />
                   <p className="commonDetail add">GITHUB</p>
                 </a>
               </li>

@@ -24,6 +24,7 @@
 }
 .logo > p{
     line-height: 80px;
+    cursor: pointer;
 }
 .menu{
     display: flex;
