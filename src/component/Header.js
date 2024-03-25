@@ -22,7 +22,6 @@ function Haeder({scrollRef, headerIdx}) {
                     ref={ref => (cRef.current[idx] = ref)}
                     onClick={() => {
                       scrollRef.current[idx]?.scrollIntoView({ behavior: 'smooth' });
-                      // setCidx(idx);
                     }}> 
                     {name} 
                   </span>
@@ -35,7 +34,6 @@ function Haeder({scrollRef, headerIdx}) {
                   key={idx}
                   ref={ref => (cRef.current[idx] = ref)}
                   onClick={() => {
-                    // setCidx(idx);
                     scrollRef.current[idx]?.scrollIntoView({ behavior: 'smooth' });
                   }}> 
                   {name} 
