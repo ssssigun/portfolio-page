@@ -24,7 +24,7 @@ function App() {
           }
         });
       },
-      {threshold : [0.5]} // 뷰포트와 교차하는 비율이 60% 이상일 때 동작
+      {threshold : [0.6]} // 뷰포트와 교차하는 비율이 60% 이상일 때 동작
     );
       // 프로젝트만 너무 커서 따로 설정
     const observer2 = new IntersectionObserver(
@@ -36,7 +36,7 @@ function App() {
           }
         });
       },
-      {threshold : [0.2]} // 뷰포트와 교차하는 비율이 20% 이상일 때 동작
+      {threshold : [0.3]} // 뷰포트와 교차하는 비율이 20% 이상일 때 동작
     );
     observer2.observe(scrollRef.current[2]);
 

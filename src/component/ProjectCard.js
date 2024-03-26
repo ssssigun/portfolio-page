@@ -1,11 +1,16 @@
 import "../css/ProjectCard.css";
 import { FaCheck } from "react-icons/fa";
-// import modal from "../component/modal.js"
+import {useState} from "react";
+import Modal from "./Modal.js";
 
 function ProjectCard({tittle, period, img, detail1, detail2, environment}) {
+  const [isOpen, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(true);
+  };
 
     return (
-      <div className="projectCard">
+      <div className="projectCard" onClick={handleClick}>
         <div className="projectCardTittle">
           <p className="projectCardTittleMain">{tittle}</p>
           <p className="projectCardTittleSub"> {period}</p>
@@ -23,7 +28,7 @@ function ProjectCard({tittle, period, img, detail1, detail2, environment}) {
             </div>
             <ul className="projectCardBodyDetailFunction">
               {
-                environment.map((ele, idx) => (
+                environment.map((ele, idx) => ( 
                   ele[0] === "URL" || ele[0] === "Github" ? 
                     <li key={idx} className="detailFunction commonDetail">
                       <div className="detailFunctionCategory">
@@ -43,6 +48,7 @@ function ProjectCard({tittle, period, img, detail1, detail2, environment}) {
             </ul>
           </div>
         </div>
+        <Modal isOpen={isOpen} setOpen={setOpen}/>
       </div>
     );
   }
