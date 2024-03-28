@@ -6,7 +6,7 @@ import { IoIosMail } from "react-icons/io";
 import { FaGraduationCap } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiBloglovin } from "react-icons/si";
-import Tittle from "../component/Tittle.js";
+import Title from "../component/Title.js";
 import { forwardRef } from "react";
 
 const AboutMe = forwardRef((props, ref) => {
@@ -14,7 +14,7 @@ const AboutMe = forwardRef((props, ref) => {
   const snsSize = 30;
     return (
       <div className="aboutMe" ref={aboutMeRef => (ref.current[0] = aboutMeRef)}>
-        <Tittle tittle ={"ABOUT ME"}/>
+        <Title title ={"ABOUT ME"}/>
         <div className="aboutMeBody">
           <div className="pictureArea">
             <img className="aboutMePhoto" src = {`${process.env.PUBLIC_URL}/img/profile.jpg`}></img>

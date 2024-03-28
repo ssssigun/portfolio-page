@@ -1,0 +1,16 @@
+.modalTitle{
+    width : 100%;
+    font-size: 35px;
+    font-weight: bold;
+    border-bottom: 1px solid #2f3134;
+    position: relative;
+}
+.modalTitleText{
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.modalTitleSub{
+    font-size: 15px;
+    margin-left: 10px;
+    color: gray;
+}

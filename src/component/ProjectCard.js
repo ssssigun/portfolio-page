@@ -1,19 +1,28 @@
 import "../css/ProjectCard.css";
 import { FaCheck } from "react-icons/fa";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Modal from "./Modal.js";
 
-function ProjectCard({tittle, period, img, detail1, detail2, environment}) {
-  const [isOpen, setOpen] = useState(false);
-  const handleClick = () => {
-    setOpen(true);
+function ProjectCard({title, period, img, detail1, detail2, environment}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalData,setModalData] = useState(null);
+  const [temp,setTemp] = useState(false);
+  const handleClick = (data) => {
+    setIsOpen(true);
+    setModalData(data);
   };
-
+  const closeModal = () => {
+    setTemp(true);
+  };
+  useEffect(()=>{
+    setIsOpen(false);
+    setTemp(false);
+  },[temp])
     return (
-      <div className="projectCard" onClick={handleClick}>
-        <div className="projectCardTittle">
-          <p className="projectCardTittleMain">{tittle}</p>
-          <p className="projectCardTittleSub"> {period}</p>
+      <div className="projectCard" onClick={()=>handleClick({subtitle : title})}>
+        <div className="projectCardTitle">
+          <p className="projectCardTitleMain">{title}</p>
+          <p className="projectCardTitleSub"> {period}</p>
         </div>
         <div className="projectCardBody">
           <img src = {`${process.env.PUBLIC_URL}/img/${img}`} className="projectCardBodyImage"></img>
@@ -48,7 +57,7 @@ function ProjectCard({tittle, period, img, detail1, detail2, environment}) {
             </ul>
           </div>
         </div>
-        <Modal isOpen={isOpen} setOpen={setOpen}/>
+        <Modal isOpen={isOpen} closeModal={closeModal} data={modalData}/>
       </div>
     );
   }

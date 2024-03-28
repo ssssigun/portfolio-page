@@ -1,6 +1,6 @@
 import SkillCard from "../component/SkillCard.js";
 import "../css/TechSkill.css";
-import Tittle from "../component/Tittle.js";
+import Title from "../component/Title.js";
 import { forwardRef } from "react";
 
 const TechSkill = forwardRef((props,ref) =>{
@@ -8,7 +8,7 @@ const TechSkill = forwardRef((props,ref) =>{
     return (
       <div className="techSkill" ref={techSkillRef => (ref.current[1] = techSkillRef)}>
         <div className="techSkillDetail">
-          <Tittle tittle ={"Tech Skill"}/>
+          <Title title ={"Tech Skill"}/>
           <div>
             <p className="commonDetail">
               바로 사용 가능한 기술들입니다. Java를 메인 언어로 자료 구조 및 알고리즘 공부를 하고 있습니다. 웹 프로젝트를 진행할 때는 Spring 프레임 워크를 활용하고 있습니다. 원하는 서비스를 제작하기 위해서는

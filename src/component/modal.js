@@ -1,5 +1,8 @@
-import ReactModal from 'react-modal';
+import ReactModal from "react-modal";
 import styled from "styled-components";
+import ModalTittle from "./ModalTittle.js";
+import ModalFooter from "./ModalFooter.js";
+import { RxCross2 } from "react-icons/rx";
 
 const customModalStyles = styled.div = {
   overlay: {
@@ -25,17 +28,41 @@ const customModalStyles = styled.div = {
     justifyContent: "center",
     overflow: "auto",
   },
+  modalContent :{
+    width : "100%"
+  }
 };
-const Modal = ({ isOpen, setOpen }) => {
+const ArrowStyle = styled(RxCross2)`
+  position: absolute;
+  right: 1%;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 9992;
+`
+const Modal = ({ isOpen, closeModal, data }) => {
   return (
     <ReactModal 
       isOpen={isOpen}
-      onRequestClose={()=>setOpen(false)}
+      onRequestClose={closeModal}
       style={customModalStyles}
+      shouldCloseOnOverlayClick={true} 
       contentLabel="display project detail"
-      shouldCloseOnOverlayClick={true}
       >
-      <div>프로젝트 상세 내역 적기</div>
+      <div>
+        <ArrowStyle onClick={closeModal}/>
+        {data &&
+          <ModalTittle title={"소개"} subtitle={data.subtitle}/>
+        }
+        <div className='modalContent'>
+          <div className='modalContentDetail1'>
+
+          </div>
+          <div className='modalContentDetail2'>
+
+          </div>
+        </div>
+        <ModalFooter />
+      </div>
     </ReactModal>
   );
 };

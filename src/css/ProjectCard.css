@@ -9,14 +9,14 @@
     box-sizing: border-box;
     border-radius: 50px;
 }
-.projectCardTittle{
+.projectCardTitle{
     margin-bottom: 40px;
 }
-.projectCardTittleMain{
+.projectCardTitleMain{
     font-size: 25px;
     font-weight: bold;
 }
-.projectCardTittleSub{
+.projectCardTitleSub{
     font-size: 15px;
     color: gray;
 }

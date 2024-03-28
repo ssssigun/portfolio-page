@@ -1,4 +1,4 @@
-.tittle{
+.title{
     width :30%;
     font-size: 30px;
     font-weight: bold;
@@ -6,6 +6,6 @@
     padding-top: 100px;
     border-bottom: 0.5px solid #2f3134;
 }
-.tittleText{
+.titleText{
     margin-bottom: 15px;
 }

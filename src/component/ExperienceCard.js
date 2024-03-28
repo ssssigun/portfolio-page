@@ -1,7 +1,7 @@
 import "../css/ExperienceCard.css";
 
 import { GoBook } from "react-icons/go";
-function ExperienceCard({color, title, period, detail}) {
+function ExperienceCard({color, title, period, detail, picture}) {
   const headColor ={
     backgroundColor : color
   }
@@ -21,9 +21,14 @@ function ExperienceCard({color, title, period, detail}) {
             <span className="speehBubbleName commonTittle">{title}</span>
             <span className="commonSubTittle">{period}</span>
           </div>
-          <p className="commonDetail">
-            {detail}
-          </p>
+          <div className="speehBubbleComment">
+            <p className="speehBubbleText commonDetail">
+              {detail}
+            </p>
+            <div className="speehBubbleImageWrap">
+              <img src = {`${process.env.PUBLIC_URL}/img/${picture}`} className="speehBubbleImage"></img>
+            </div>
+          </div>
         </div>
       </div>
     );

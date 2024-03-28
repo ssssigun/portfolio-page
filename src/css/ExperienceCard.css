@@ -62,5 +62,19 @@
     left: 20%;
     top: 20%;
     position: absolute;
-
+}
+.speehBubbleComment{
+    width: 100%;
+    display: flex;
+}
+.speehBubbleText{
+    width: 70%;
+}
+.speehBubbleImageWrap{
+    width: 30%;
+}
+.speehBubbleImage{
+    border-radius: 20px;
+    height: 300px;   
+    margin: 0 auto;
 }
