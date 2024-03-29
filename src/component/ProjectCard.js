@@ -18,14 +18,21 @@ function ProjectCard({title, period, img, detail1, detail2, environment}) {
     setIsOpen(false);
     setTemp(false);
   },[temp])
+
+  const [isVisible, setIsVisible] = useState(false); // 상자의 가시성 상태를 관리
+
     return (
-      <div className="projectCard" onClick={()=>handleClick({subtitle : title})}>
+      <div className="projectCard" onClick={()=>handleClick({subtitle : title})} onMouseEnter={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
         <div className="projectCardTitle">
           <p className="projectCardTitleMain">{title}</p>
           <p className="projectCardTitleSub"> {period}</p>
         </div>
         <div className="projectCardBody">
-          <img src = {`${process.env.PUBLIC_URL}/img/${img}`} className="projectCardBodyImage"></img>
+          <div className="projectCardBodyImageArea">
+            <img src = {`${process.env.PUBLIC_URL}/img/${img}`} className="projectCardBodyImage"/>
+            <div className={`eventBox ${isVisible ? 'visible' : 'unVisible'}`}> 자세히 보려면 클릭해주세요 </div>
+          </div>
+          {/* <div className="eventBox">상세히 보기</div> */}
           <div className="projectCardBodyDetail">
             <div className="projectCardBodyDetailContext">
               <p className="commonDetail">

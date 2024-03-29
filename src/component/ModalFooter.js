@@ -1,18 +1,20 @@
-import { useState } from "react";
 import "../css/ModalFooter.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
-function ModalFooter(){
-    const [number, setNumber] = useState(1);
+function ModalFooter({number, setNumber}){
     const prevNumber = () => {
         if(number > 1){
             setNumber(number-1);
+        }else{
+            setNumber(4);
         }
     }
     const nextNumber = () => {
         if(number < 4){
             setNumber(number+1);
+        }else{
+            setNumber(1);
         }
     }
     return(
