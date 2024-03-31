@@ -1,26 +1,13 @@
 import "../css/SkillCard.css"
-function SkillCard({skillName, color, bar, detail}) {
-  const style = {
-    backgroundColor : color
-  }
-  const barStyle = {
-    backgroundColor : color,
-    width : bar +"%"
-  }
-  const per = {
-    color : color
+function SkillCard({skillName, color, detail}) {
+  const line = {
+    "border-bottom": "2px solid" + color,
+    "padding-bottom" : "10px"
   }
     return (
       <div className="skillCard">
-        <p className="commonTittle">{skillName}</p>
-        <div className="progressBar">
-          <div className="currentBar" style={barStyle}>
-            <div className="barCircul" style={style}>
-            <div className="barPercent" style={per}> {bar}% </div>
-            </div>
-          </div>
-        </div>
-        <p className="commonDetail">
+        <p className="commonTittle" style={line}>{skillName}</p>
+        <p className="commonDetail skillDetail">
           {detail}
         </p>
       </div>

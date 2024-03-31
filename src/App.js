@@ -24,7 +24,7 @@ function App() {
           }
         });
       },
-      {threshold : [0.6]} // 뷰포트와 교차하는 비율이 60% 이상일 때 동작
+      {threshold : [0.7]} // 뷰포트와 교차하는 비율이 70% 이상일 때 동작
     );
       // 프로젝트만 너무 커서 따로 설정
     const observer2 = new IntersectionObserver(

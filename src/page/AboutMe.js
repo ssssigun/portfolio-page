@@ -33,10 +33,10 @@ const AboutMe = forwardRef((props, ref) => {
                 <FaHome size={infoSize} className="infoIcon"/>
                 <p className="commonDetail"> 대전광역시 유성구 </p>
               </li>
-              <li className="info">
+              {/* <li className="info">
                 <IoIosMail size={infoSize} className="infoIcon"/>
                 <p className="commonDetail"> hoo2389@gmail.com </p>
-              </li>
+              </li> */}
               <li className="info">
                 <FaGraduationCap size={infoSize} className="infoIcon"/>
                 <p className="commonDetail"> 한남대학교  ( 전기전자공학과 ) </p>

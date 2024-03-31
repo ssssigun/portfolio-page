@@ -1,12 +1,17 @@
 import "../css/ProjectCard.css";
 import { FaCheck } from "react-icons/fa";
+import { AiOutlineThunderbolt } from "react-icons/ai";
+import { PiGearDuotone } from "react-icons/pi";
 import {useEffect, useState} from "react";
 import Modal from "./Modal.js";
 
-function ProjectCard({title, period, img, detail1, detail2, environment}) {
+function ProjectCard({title, period, img, width, detail1, detail2, environment}) {
   const [isOpen, setIsOpen] = useState(false);
   const [modalData,setModalData] = useState(null);
   const [temp,setTemp] = useState(false);
+  const imgWidth = {
+    "width" : width
+  }
   const handleClick = (data) => {
     setIsOpen(true);
     setModalData(data);
@@ -29,10 +34,9 @@ function ProjectCard({title, period, img, detail1, detail2, environment}) {
         </div>
         <div className="projectCardBody">
           <div className="projectCardBodyImageArea">
-            <img src = {`${process.env.PUBLIC_URL}/img/${img}`} className="projectCardBodyImage"/>
+            <img src = {`${process.env.PUBLIC_URL}/img/${img}`} className="projectCardBodyImage" style={imgWidth}/>
             <div className={`eventBox ${isVisible ? 'visible' : 'unVisible'}`}> 자세히 보려면 클릭해주세요 </div>
           </div>
-          {/* <div className="eventBox">상세히 보기</div> */}
           <div className="projectCardBodyDetail">
             <div className="projectCardBodyDetailContext">
               <p className="commonDetail">

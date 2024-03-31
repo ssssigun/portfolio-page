@@ -11,7 +11,7 @@ const Project = forwardRef((props,ref) =>{
         {
           pr.map((ele =>{
             return(
-              <li> <ProjectCard title={ele.tittle} period={ele.period} img={ele.img} detail1={ele.detail1} detail2={ele.detail2} environment={ele.environment}/> </li> 
+              <li> <ProjectCard title={ele.tittle} period={ele.period} img={ele.img} width={ele.width} detail1={ele.detail1} detail2={ele.detail2} environment={ele.environment}/> </li> 
             )
           }))
         }

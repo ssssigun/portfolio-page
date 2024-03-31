@@ -4,7 +4,6 @@
 .projectCard:hover{
     background-color: #f2f3f7;
     box-shadow: 0 2px 2rem hsla(0,0%,80%,.8); 
-    /* border : 0.5px solid #000; */
     cursor: pointer;
     box-sizing: border-box;
     border-radius: 50px;
