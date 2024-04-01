@@ -14,7 +14,7 @@ const Contact = forwardRef((props, ref) =>{
     // 텍스트를 클립보드에 복사
     navigator.clipboard.writeText(textToCopy)
       .then(() => {
-        alert('텍스트가 성공적으로 복사되었습니다.');
+        alert('텍스트가 복사되었습니다.');
       })
       .catch((error) => {
         console.error('텍스트를 복사하는 중 오류가 발생했습니다:', error);
@@ -27,7 +27,7 @@ const Contact = forwardRef((props, ref) =>{
       <div className="contactArea">
         <div className="contactTextArea">
           <div className="contactComment">
-            <p> 어떤 형태의 피드백 환영합니다!</p>
+            <p> <b>피드백</b>은 언제나 환영합니다!</p>
             <p> 끝까지 봐주셔서 감사합니다.</p>
           </div>
           <ul className="contactList">

@@ -8,17 +8,17 @@
 }
 .contactTextArea{
     width: 100%;
-    margin: 150px 0;
+    margin: 180px 0;
 }
 .contactComment{
-    font-size: 20px;
+    font-size: 25px;
 }
 .contactList{
     display: flex;
     justify-content: center;
     gap: 100px;
     font-size: 20px;
-    margin: 80px 0;
+    margin: 70px 0;
 }
 .contactList > li{
     height: 40px;
@@ -32,5 +32,5 @@
 .contactText{
     height: 100%;
     margin-left: 10px;
-    line-height: 40px;
+    line-height: 35px;
 }

@@ -1,0 +1,20 @@
+.ModalWrap{
+    width: 100%;
+    height: 100%;
+}
+.modalContent{
+    width: 100%;
+    height: 90%;
+}
+.modalContentDetail{
+    width: 100%;
+    height: 100%;
+    box-sizing : border-box;
+    /* padding : 30px; */
+    /* 여기서부터는 임시 설정 */
+    padding : 330px 30px 30px 30px;
+    font-size : 25px;
+    display: flex;
+    justify-content: center;
+
+}

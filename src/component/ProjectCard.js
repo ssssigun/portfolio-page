@@ -1,6 +1,6 @@
 import "../css/ProjectCard.css";
 import { FaCheck } from "react-icons/fa";
-import { AiOutlineThunderbolt } from "react-icons/ai";
+import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { PiGearDuotone } from "react-icons/pi";
 import {useEffect, useState} from "react";
 import Modal from "./Modal.js";
@@ -25,7 +25,7 @@ function ProjectCard({title, period, img, width, detail1, detail2, environment})
   },[temp])
 
   const [isVisible, setIsVisible] = useState(false); // 상자의 가시성 상태를 관리
-
+    const iconSize = 22;
     return (
       <div className="projectCard" onClick={()=>handleClick({subtitle : title})} onMouseEnter={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
         <div className="projectCardTitle">
@@ -39,9 +39,11 @@ function ProjectCard({title, period, img, width, detail1, detail2, environment})
           </div>
           <div className="projectCardBodyDetail">
             <div className="projectCardBodyDetailContext">
+              <div className="projectCardBodySubtitle"><AiTwotoneThunderbolt size={iconSize} className="projectIcon"/> <span>요약</span></div>
               <p className="commonDetail">
                 {detail1}
               </p>
+              <div className="projectCardBodySubtitle"><PiGearDuotone size={iconSize} className="projectIcon"/> <span>기획 의도</span></div>
               <p className="commonDetail">
                 {detail2}
               </p>

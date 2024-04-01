@@ -4,7 +4,7 @@ import ModalTittle from "./ModalTittle.js";
 import ModalFooter from "./ModalFooter.js";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
-
+import "../css/Modal.css"
 const customModalStyles = styled.div = {
   overlay: {
     backgroundColor: " rgba(0, 0, 0, 0.4)",
@@ -44,13 +44,15 @@ const Modal = ({ isOpen, closeModal, data }) => {
   const [number, setNumber] = useState(1);
   var t = "";
   if(number ===1){
-    t = "소개"
+    t = "개요"
   }else if(number === 2){
     t = "기획"
   }else if(number === 3){
-    t = "개발"
+    t = "디자인"
   }else if(number === 4){
-    t = "마무리"
+    t = "개발 과정"
+  }else if(number === 5){
+    t = "전체 화면"
   }
   return (
     <ReactModal 
@@ -60,18 +62,16 @@ const Modal = ({ isOpen, closeModal, data }) => {
       shouldCloseOnOverlayClick={true} 
       contentLabel="display project detail"
       >
-      <div>
+      <div className="ModalWrap">
         <ArrowStyle onClick={()=>{closeModal(); setNumber(1)}}/>
         {
           data &&
             <ModalTittle title={t} subtitle={data.subtitle}/>
         }
         <div className='modalContent'>
-          <div className='modalContentDetail1'>
-
-          </div>
-          <div className='modalContentDetail2'>
-
+          <div className='modalContentDetail'>
+            {/* 임시 설정 */}
+            죄송해요 ㅠㅜ 프로젝트의 매력을 어필하기 위해서 열심히 제작하고 있어요!<br/> 4월 3일까지 조금만 기다려주세요!
           </div>
         </div>
         <ModalFooter number={number} setNumber={setNumber}/>
