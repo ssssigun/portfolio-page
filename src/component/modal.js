@@ -42,18 +42,41 @@ const ArrowStyle = styled(RxCross2)`
 `
 const Modal = ({ isOpen, closeModal, data }) => {
   const [number, setNumber] = useState(1);
-  var t = "";
-  if(number ===1){
-    t = "개요"
-  }else if(number === 2){
-    t = "기획"
-  }else if(number === 3){
-    t = "디자인"
-  }else if(number === 4){
-    t = "개발 과정"
-  }else if(number === 5){
-    t = "전체 화면"
-  }
+  const titleList = [
+    {
+      titleMain : "개요",
+      titleSub1 : "아키텍처",
+      titleSub2 : "개요",
+    },
+    {
+      titleMain : "기획 및 디자인",
+      titleSub1 : "기획",
+      titleSub2 : "디자인"
+    },
+    {
+      titleMain : "내가 맡은 역할",
+      titleSub1 : "팀장으로써",
+      titleSub2 : "개발"
+    },
+    {
+      titleMain : "위기 상황 해결",
+      titleSub1 : "갈등 원인",
+      titleSub2 : "해결"
+    },
+    {
+      titleMain : "전체 화면 구성",
+      titleSub1 : "1",
+      titleSub2 : "2"
+    },{
+      titleMain : "배우고 느낀점",
+      titleSub1 : "1",
+      titleSub2 : "2"
+    }
+  ]
+  // 번호마다 제목 변경
+  var titleMain = titleList[number-1].titleMain;
+  var titleSub1 = titleList[number-1].titleSub1;
+  var titleSub2 = titleList[number-1].titleSub2;
   return (
     <ReactModal 
       isOpen={isOpen}
@@ -66,13 +89,29 @@ const Modal = ({ isOpen, closeModal, data }) => {
         <ArrowStyle onClick={()=>{closeModal(); setNumber(1)}}/>
         {
           data &&
-            <ModalTittle title={t} subtitle={data.subtitle}/>
+            <ModalTittle title={titleMain} subtitle={data.subtitle}/>
         }
         <div className='modalContent'>
-          <div className='modalContentDetail'>
             {/* 임시 설정 */}
+          <div className='modalContentDetail'>
             죄송해요 ㅠㅜ 프로젝트의 매력을 어필하기 위해서 열심히 제작하고 있어요!<br/> 4월 3일까지 조금만 기다려주세요!
           </div>
+          {/* <div className="modalDetail">
+            <div className="modalHalfSide">
+              <p className="modalHalfSideTitle"> {titleSub1} </p>
+              {
+                data &&
+                <img src={`${process.env.PUBLIC_URL}/img/${data.modal[2*(number-1)]}`} className="modalHalfSideImage"></img>
+              }
+            </div>
+            <div className="modalHalfSide">
+              <p className="modalHalfSideTitle"> {titleSub2} </p>
+              {
+                data &&
+                <img src={`${process.env.PUBLIC_URL}/img/${data.modal[2 * (number-1) + 1]}`} className="modalHalfSideImage"></img>
+              }
+            </div>
+          </div> */}
         </div>
         <ModalFooter number={number} setNumber={setNumber}/>
       </div>

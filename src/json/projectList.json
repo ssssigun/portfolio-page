@@ -12,52 +12,92 @@
           ["Backend", "Java, Spring"],
           ["Database", "Oracle"],
           ["Github", "https://github.com/ssssigun/Web-Omok"]
+        ],
+        "modal" :[
+          "omokArchitecture.png",
+          "",
+          "omokERD.png",
+          "omokDesign.png",
+          "",
+          "",
+          "",
+          ""
         ]
-    },
-    {
-      "tittle" : "We go (여행 플래너 및 예산 정리 서비스)",
-      "period" : "2023.05.15 ~ 2023.07.18 (5인 팀 프로젝트)",
-      "img" : "WegoMain.png",
-      "width" : "90%",
-      "detail1" : "여행 플래너 서비스는 여행 계획을 세우고 여행 후의 소비를 시각적으로 확인하는데 도움이 되는 서비스입니다. 지도를 통해 여행 동선을 계획할 수 있어 여행 일정을 효율적으로 구성할 수 있습니다. 또한, 카드 사용 내역을 가져와 여행 계획과 비교하여 소비 패턴을 분석할 수 있는 그래프로 시각화하여 제공합니다.",
-      "detail2" : "여행 도중 예상치 못한 지출이 발생하여 예산이 초과되는 상황을 방지하기 위해 이 서비스를 기획하게 되었습니다.",
-      "environment" : [
+      },
+      {
+        "tittle" : "We go (여행 플래너 및 예산 정리 서비스)",
+        "period" : "2023.05.15 ~ 2023.07.18 (5인 팀 프로젝트)",
+        "img" : "WegoMain.png",
+        "width" : "90%",
+        "detail1" : "여행 플래너 서비스는 여행 계획을 세우고 여행 후의 소비를 시각적으로 확인하는데 도움이 되는 서비스입니다. 지도를 통해 여행 동선을 계획할 수 있어 여행 일정을 효율적으로 구성할 수 있습니다. 또한, 카드 사용 내역을 가져와 여행 계획과 비교하여 소비 패턴을 분석할 수 있는 그래프로 시각화하여 제공합니다.",
+        "detail2" : "여행 도중 예상치 못한 지출이 발생하여 예산이 초과되는 상황을 방지하기 위해 이 서비스를 기획하게 되었습니다.",
+        "environment" : [
           ["주요 기능" , "회원 가입 및 로그인, 여행 계획 짜기, 여행지 후기 작성, 게시판 작성하기, ....."],
           ["Frontend", "JSP, Jquery"],
           ["Backend", "Java, Spring"],
           ["Database", "MySQL"],
           ["Github", "https://github.com/ssssigun/Shinhan_DS_SW_Academy_Project"],
           ["Github", "https://github.com/ssssigun/SSO_final"]
+        ],
+        "modal" :[
+          "WegoArchitecture.png",
+          "",
+          "WegoERD.png",
+          "WegoDesign.png",
+          "",
+          "",
+          "",
+          ""
         ]
-    },
-    {
-      "tittle" : "음식 기부 서비스",
-      "period" : "2023.07.25 ~ 2023.08.16 (3인 팀 프로젝트)",
-      "img" : "donationMain.png",
-      "width" : "65%",
-      "detail1" : "모바일 웹 서비스는 기부를 쉽게 시도할 수 있도록 설계하였습니다. 배달 애플리케이션과 유사한 UI를 채택하여 사용자가 익숙한 환경에서 기부를 할 수 있도록 하였습니다. 이를 통해 기부를 장려하고자 했으며, 사용자들이 웹을 통해 음식을 시킬 수 있기 때문에 아동급식카드와 같이 매장에서 사용하는 것과는 달리 부담 없이 이용할 수 있도록 했습니다.",
-      "detail2" : "아동 급식 카드를 사용하는 이웃들의 낙인 효과를 걱정하지 않고 편안하게 비대면으로 식사를 받을 수 있도록 서비스를 제공함으로써 사회적 차별을 해소하고자 했습니다. 더불어 기부의 편의성을 높여 활발한 기부 문화를 조성하고자 하였습니다.",
-      "environment" : [
+      },
+      {
+        "tittle" : "음식 기부 서비스",
+        "period" : "2023.07.25 ~ 2023.08.16 (3인 팀 프로젝트)",
+        "img" : "donationMain.png",
+        "width" : "65%",
+        "detail1" : "모바일 웹 서비스는 기부를 쉽게 시도할 수 있도록 설계하였습니다. 배달 애플리케이션과 유사한 UI를 채택하여 사용자가 익숙한 환경에서 기부를 할 수 있도록 하였습니다. 이를 통해 기부를 장려하고자 했으며, 사용자들이 웹을 통해 음식을 시킬 수 있기 때문에 아동급식카드와 같이 매장에서 사용하는 것과는 달리 부담 없이 이용할 수 있도록 했습니다.",
+        "detail2" : "아동 급식 카드를 사용하는 이웃들의 낙인 효과를 걱정하지 않고 편안하게 비대면으로 식사를 받을 수 있도록 서비스를 제공함으로써 사회적 차별을 해소하고자 했습니다. 더불어 기부의 편의성을 높여 활발한 기부 문화를 조성하고자 하였습니다.",
+        "environment" : [
           ["주요 기능" , "가게 목록 확인, 메뉴 확인, 기부하기, 기부 받기"],
           ["Frontend", "JavaScript, React"],
           ["Backend", "Java, SpringBoot"],
           ["Database", "MySQL"],
           ["Github", "https://github.com/ssssigun/Shinhan_DS_SW_Academy_Project_Donation_Function"]
+        ],
+        "modal" :[
+          "donationArchitecture.png",
+          "",
+          "donationERD.png",
+          "donationDesign.png",
+          "",
+          "",
+          "",
+          ""
         ]
-    },
-    {
-      "tittle" : "포트 폴리오 사이트",
-      "period" : "2024.03.15 ~ 2024.03.31 (개인 프로젝트)",
-      "img" : "portfolioMain.png",
-      "width" : "90%",
-      "detail1" : "포트폴리오 용도로 제작한 웹 페이지입니다. 백엔드 개발자를 지망하지만 필요하다면 리액트를 활용한 프론트엔드 작업도 문제없이 진행 가능합니다.",
-      "detail2" : "특색있는 포트폴리오를 만들고 싶었습니다. 백엔드 개발을 희망하지만 React를 활용 가능하다는점과 노력을 담고 싶어서 제작하였습니다.",
-      "environment" : [
+      },
+      {
+        "tittle" : "포트 폴리오 사이트",
+        "period" : "2024.03.15 ~ 2024.03.31 (개인 프로젝트)",
+        "img" : "portfolioMain.png",
+        "width" : "90%",
+        "detail1" : "포트폴리오 용도로 제작한 웹 페이지입니다. 백엔드 개발자를 지망하지만 필요하다면 리액트를 활용한 프론트엔드 작업도 문제없이 진행 가능합니다.",
+        "detail2" : "특색있는 포트폴리오를 만들고 싶었습니다. 백엔드 개발을 희망하지만 React를 활용 가능하다는점과 노력을 담고 싶어서 제작하였습니다.",
+        "environment" : [
           ["주요 기능" , "자기소개, 사용 가능한 기술, 프로젝트 경험, 대외활동 경험, 포부"],
           ["Frontend", "JavaScript, React"],
           ["Github", "https://github.com/ssssigun/portfolio-page"],
           ["Deployment", "Github Pages"],
           ["URL", "https://ssssigun.github.io/portfolio-page/"]
+        ],
+        "modal" :[
+          "portfolioArchitecture.png",
+          "",
+          "",
+          "portfolioDesign.png",
+          "",
+          "",
+          "",
+          ""
         ]
-    }
-  ]
+      }
+    ]
