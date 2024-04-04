@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "회원 가입",
+        "img" : "omokScreen1.png",
+        "explan" : "회원 가입 화면입니다."
+    },
+    {
+        "name" : "정보 수정",
+        "img" : "omokScreen2.png",
+        "explan" : "정보 수정 화면입니다."
+    },
+    {
+        "name" : "로그인 및 메인 화면",
+        "img" : "omokMain.png",
+        "explan" : "로그인 및 메인 화면입니다."
+    },
+    {
+        "name" : "로비",
+        "img" : "omokScreen3.png",
+        "explan" : "로비 화면입니다."
+    },
+    {
+        "name" : "랭킹",
+        "img" : "omokScreen4.png",
+        "explan" : "랭킹 화면입니다."
+    },
+    {
+        "name" : "게임 화면",
+        "img" : "omokPlay.png",
+        "explan" : "게임 화면입니다."
+    }
+]

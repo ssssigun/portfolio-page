@@ -7,11 +7,11 @@ function ModalFooter({number, setNumber}){
         if(number > 1){
             setNumber(number-1);
         }else{
-            setNumber(5);
+            setNumber(6);
         }
     }
     const nextNumber = () => {
-        if(number < 5){
+        if(number < 6){
             setNumber(number+1);
         }else{
             setNumber(1);

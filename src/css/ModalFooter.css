@@ -4,12 +4,13 @@
     font-size: 20px;
     position: absolute;
     bottom: 2%;
-    left: 49%;
+    left: 48%;
 }
 .ModalFooterNumber{
 
 }
 .pageArrow{
+    font-size: 25px;
     cursor: pointer;
     margin: auto 0;
 }

@@ -1,5 +1,6 @@
 [
     {
+      "idx" : 1,
       "tittle" : "캐주얼 오목",
       "period" : "2023.05.01 ~ 2023.05.12 (6인 팀 프로젝트)",
       "img" : "omokMain.png",
@@ -12,19 +13,10 @@
           ["Backend", "Java, Spring"],
           ["Database", "Oracle"],
           ["Github", "https://github.com/ssssigun/Web-Omok"]
-        ],
-        "modal" :[
-          "omokArchitecture.png",
-          "",
-          "omokERD.png",
-          "omokDesign.png",
-          "",
-          "",
-          "",
-          ""
         ]
       },
       {
+        "idx" : 2,
         "tittle" : "We go (여행 플래너 및 예산 정리 서비스)",
         "period" : "2023.05.15 ~ 2023.07.18 (5인 팀 프로젝트)",
         "img" : "WegoMain.png",
@@ -38,19 +30,10 @@
           ["Database", "MySQL"],
           ["Github", "https://github.com/ssssigun/Shinhan_DS_SW_Academy_Project"],
           ["Github", "https://github.com/ssssigun/SSO_final"]
-        ],
-        "modal" :[
-          "WegoArchitecture.png",
-          "",
-          "WegoERD.png",
-          "WegoDesign.png",
-          "",
-          "",
-          "",
-          ""
         ]
       },
       {
+        "idx" : 3,
         "tittle" : "음식 기부 서비스",
         "period" : "2023.07.25 ~ 2023.08.16 (3인 팀 프로젝트)",
         "img" : "donationMain.png",
@@ -63,19 +46,10 @@
           ["Backend", "Java, SpringBoot"],
           ["Database", "MySQL"],
           ["Github", "https://github.com/ssssigun/Shinhan_DS_SW_Academy_Project_Donation_Function"]
-        ],
-        "modal" :[
-          "donationArchitecture.png",
-          "",
-          "donationERD.png",
-          "donationDesign.png",
-          "",
-          "",
-          "",
-          ""
         ]
       },
       {
+        "idx" : 4,
         "tittle" : "포트 폴리오 사이트",
         "period" : "2024.03.15 ~ 2024.03.31 (개인 프로젝트)",
         "img" : "portfolioMain.png",
@@ -88,16 +62,6 @@
           ["Github", "https://github.com/ssssigun/portfolio-page"],
           ["Deployment", "Github Pages"],
           ["URL", "https://ssssigun.github.io/portfolio-page/"]
-        ],
-        "modal" :[
-          "portfolioArchitecture.png",
-          "",
-          "",
-          "portfolioDesign.png",
-          "",
-          "",
-          "",
-          ""
         ]
       }
     ]

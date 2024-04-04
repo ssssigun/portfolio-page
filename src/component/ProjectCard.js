@@ -5,7 +5,7 @@ import { PiGearDuotone } from "react-icons/pi";
 import {useEffect, useState} from "react";
 import Modal from "./Modal.js";
 
-function ProjectCard({title, period, img, width, detail1, detail2, environment, modal}) {
+function ProjectCard({pIdx, title, period, img, width, detail1, detail2, environment}) {
   const [isOpen, setIsOpen] = useState(false);
   const [modalData,setModalData] = useState(null);
   const [temp,setTemp] = useState(false);
@@ -32,7 +32,7 @@ function ProjectCard({title, period, img, width, detail1, detail2, environment, 
   const [isVisible, setIsVisible] = useState(false); // 상자의 가시성 상태를 관리
     const iconSize = 22;
     return (
-      <div className="projectCard" onClick={()=>handleClick({subtitle : title, modal : modal})} onMouseEnter={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
+      <div className="projectCard" onClick={()=>handleClick({subtitle : title, pIdx : pIdx})} onMouseEnter={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
         <div className="projectCardTitle">
           <p className="projectCardTitleMain">{title}</p>
           <p className="projectCardTitleSub"> {period}</p>

@@ -28,15 +28,25 @@
 .modalHalfSide{
     width: 50%;
     height: 100%;
-
 }
 .modalHalfSideTitle{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-.modalHalfSideImage{
+
+.modalHalfSideImageArea{
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
+}
+.modalHalfSideImage{
+    width: 100%;
+}
+.modalHalfSideText{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.modalImage{
+    height: 70%;
 }
