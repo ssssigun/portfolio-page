@@ -26,6 +26,10 @@ const Project_1 = ({number, titleSub1, titleSub2}) => {
             <div className="modalDetail">
                 <div className="modalHalfSide">
                 <p className="modalHalfSideTitle"> {titleSub1} </p>
+                    <div className="modalHalfSideImageArea">
+                        <img src={`${process.env.PUBLIC_URL}/img/omokPlan.png`} className="modalHalfSideImage"></img>
+                        <p className="modalHalfSideText"> 필요한 기능들을 정의하였습니다. 우선 순위를 정하여 먼저 중요한 기능을 구현하고 부가적인 기능은 추후 회의를 통해 정하여 개발하기로 하였습니다.</p>
+                    </div>    
                 </div>
                 <div className="modalHalfSide">
                 <p className="modalHalfSideTitle"> {titleSub2} </p>
@@ -43,7 +47,7 @@ const Project_1 = ({number, titleSub1, titleSub2}) => {
                 <p className="modalHalfSideTitle"> {titleSub1} </p>
                     <div className="modalHalfSideImageArea">
                         <img src={`${process.env.PUBLIC_URL}/img/omokDesign.png`} className="modalHalfSideImage"></img>
-                        <p className="modalHalfSideText"> Figma를 통해서 세세한 화면 설계를 진행하였습니다. </p>
+                        <p className="modalHalfSideText"> Figma를 통해서 세세한 화면 설계를 진행하였습니다. 처음에는 UI이만 설계를 하고 모코코 캐릭터를 사용한 것에서 여감을 받아 전체적인 테마를 로스트아크 게임의 이미지들을 활용하였습니다.</p>
                     </div>    
                 </div>
                 <div className="modalHalfSide">
@@ -58,8 +62,8 @@ const Project_1 = ({number, titleSub1, titleSub2}) => {
                 <div className="modalHalfSide">
                 <p className="modalHalfSideTitle"> {titleSub1} </p>
                     <div className="modalHalfSideImageArea">
-                        <p className="modalHalfSideText"> Git에 익숙한 팀원이 없어서 수기로 직접 합치면서 시간이 생각보다 오래 걸렸다. </p>
-                        <p className="modalHalfSideText"> 소켓이 아니라 http를 활용하다보니 상대가 오목 돌을 놓았을 때 바로 보이지 않았다. </p>
+                        <img src={`${process.env.PUBLIC_URL}/img/omokRisk.png`} className="modalHalfSideImage"></img>
+                        <p className="modalHalfSideText"> Git에 익숙한 팀원이 없어서 수기로 직접 합치면서 시간이 생각보다 오래 걸렸다. 또한 소켓이 아니라 http를 활용하다보니 상대가 오목 돌을 놓았을 때 바로 보이지 않았다.</p>
                         </div>    
                     </div>
                 <div className="modalHalfSide">
@@ -114,10 +118,12 @@ const Project_1 = ({number, titleSub1, titleSub2}) => {
                         {
                             screen.map((ele =>{
                                 return(
-                                    <SwiperSlide>
-                                        <p className="modalHalfSideTitle"> {ele.name} </p>
-                                        <img src={`${process.env.PUBLIC_URL}/img/${ele.img}`} className="modalImage"></img>
-                                        <p className="modalHalfSideText"> {ele.explan} </p>
+                                    <SwiperSlide id='slideWrap'>
+                                        <div className='slideScreen'>
+                                            <p className="modalHalfSideTitle"> {ele.name} </p>
+                                            <img src={`${process.env.PUBLIC_URL}/img/${ele.img}`} className="modalImage"></img>
+                                            <p className="modalHalfSideText"> {ele.explan} </p>
+                                        </div>
                                     </SwiperSlide>
                                 )
                               }))

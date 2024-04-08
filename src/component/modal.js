@@ -106,13 +106,13 @@ const Modal = ({ isOpen, closeModal, data }) => {
         }
         <div className='modalContent'>
             {/* 임시 설정 */}
-          <div className='modalContentDetail'>
+          {/* <div className='modalContentDetail'>
             죄송해요 ㅠㅜ 프로젝트의 매력을 어필하기 위해서 열심히 제작하고 있어요!<br/> 4월 7일까지 조금만 기다려주세요!
-          </div>
-          {/* {
+          </div> */}
+          {
             data &&
             proejctList[data.pIdx-1]
-          } */}
+          }
         </div>
         <ModalFooter number={number} setNumber={setNumber}/>
       </div>

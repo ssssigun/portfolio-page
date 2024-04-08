@@ -2,11 +2,11 @@ import "../css/AboutMe.css";
 import { IoPerson } from "react-icons/io5";
 import { FaBirthdayCake } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
 import { FaGraduationCap } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiBloglovin } from "react-icons/si";
 import Title from "../component/Title.js";
+import Introduce from "./Introduce.js";
 import { forwardRef } from "react";
 
 const AboutMe = forwardRef((props, ref) => {
@@ -14,6 +14,7 @@ const AboutMe = forwardRef((props, ref) => {
   const snsSize = 30;
     return (
       <div className="aboutMe" ref={aboutMeRef => (ref.current[0] = aboutMeRef)}>
+        <Introduce/>
         <Title title ={"ABOUT ME"}/>
         <div className="aboutMeBody">
           <div className="pictureArea">

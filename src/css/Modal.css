@@ -43,8 +43,15 @@
 .modalHalfSideImage{
     width: 100%;
 }
+#slideWrap{
+    display: flex;
+    justify-content: center;
+}
+.slideScreen{
+    height: 100%;
+}
 .modalHalfSideText{
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 18px;
 }
 .modalImage{

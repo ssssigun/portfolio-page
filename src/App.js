@@ -54,7 +54,7 @@ function App() {
     <div className="App">
       <Header scrollRef={scrollRef} headerIdx ={headerIdx}/>
       <div className="main">
-        <Introduce/>
+        {/* <Introduce/> */}
         <AboutMe ref={scrollRef}/>
         <TechSkill ref={scrollRef}/>
         <Projects ref={scrollRef}/>
