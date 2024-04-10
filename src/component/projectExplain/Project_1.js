@@ -52,7 +52,10 @@ const Project_1 = ({number, titleSub1, titleSub2}) => {
                 </div>
                 <div className="modalHalfSide">
                 <p className="modalHalfSideTitle"> {titleSub2} </p>
-                    <img src={`${process.env.PUBLIC_URL}/img/`} className="modalHalfSideImage"></img>
+                    <div className="modalHalfSideImageArea">
+                        <img src={`${process.env.PUBLIC_URL}/img/omokScreen1.png`} className="modalHalfSideImage"></img>
+                        <p className="modalHalfSideText"> 로그인 및 회원가입을 개발하였습니다. 회원 가입에서는 비동기로 데이터를 확인하여 사용자에게 정해진 포맷에 맞게 입력 받도록 하였고 로그인 화면에서는 비동기로 로그인을 확인하여 틀리면 경고 메세지를 출력하고 맞으면 로비 화면으로 넘어가도록 만들었습니다.</p>
+                    </div>    
                 </div>
             </div> 
         )
@@ -63,13 +66,13 @@ const Project_1 = ({number, titleSub1, titleSub2}) => {
                 <p className="modalHalfSideTitle"> {titleSub1} </p>
                     <div className="modalHalfSideImageArea">
                         <img src={`${process.env.PUBLIC_URL}/img/omokRisk.png`} className="modalHalfSideImage"></img>
-                        <p className="modalHalfSideText"> Git에 익숙한 팀원이 없어서 수기로 직접 합치면서 시간이 생각보다 오래 걸렸다. 또한 소켓이 아니라 http를 활용하다보니 상대가 오목 돌을 놓았을 때 바로 보이지 않았다.</p>
+                        <p className="modalHalfSideText"> Git을 사용하지 않고 수기로 직접 합치면서 시간이 생각보다 오래 걸렸습니다. 또한 소켓이 아니라 http를 활용하다보니 상대가 오목 돌을 놓았을 때 바로 보이지 않았다.</p>
                         </div>    
                     </div>
                 <div className="modalHalfSide">
                 <p className="modalHalfSideTitle"> {titleSub2} </p>
                     <div className="modalHalfSideImageArea">
-                        <p className="modalHalfSideText"> 다음 프로젝트때 부터 git을 활용하기로 했다. 익숙하지 않으므로 GUI tool인 Github Desktop 활용 </p>
+                        <p className="modalHalfSideText"> 다음 프로젝트때 부터 git을 활용하기로 했습니다. 익숙하지 않으므로 GUI tool인 Github Desktop 활용해서 진행하기로 하였습니다. </p>
                         <p className="modalHalfSideText"> 1초마다 리렌더링하면서 게임 진행 </p>
                     </div>
                 </div>
@@ -81,15 +84,15 @@ const Project_1 = ({number, titleSub1, titleSub2}) => {
                 <div className="modalHalfSide">
                 <p className="modalHalfSideTitle"> {titleSub1} </p>
                     <div className="modalHalfSideImageArea">
-                        <p className="modalHalfSideText"> 팀원들과 소통하면서 프로젝트를 처음 진행해 보았다.</p>
-                        <p className="modalHalfSideText"> 게임은 소켓을 활용하는 것이 좋은 것 같다. 하지만 http로도 구현 가능하며, 통신 방법마다 장단점이 있는 것 같다.</p>
+                        <p className="modalHalfSideText"> 팀원들과 소통하면서 프로젝트를 처음 진행해 보았습니다. 개발은 여러명의 사람들과 진행하는 것이므로 회의를 효율적으로 하는 것과 협업 툴을 이용하여 의사소통 하는 방법을 배웠습니다. </p>
+                        <p className="modalHalfSideText"> HTTP 방법으로 오목 게임이 구현 가능하지만 게임이라는 특성상 Sorket 통신이 좀 더 적합하다는 것을 느꼈습니다.</p>
                         </div>    
                     </div>
                 <div className="modalHalfSide">
                 <p className="modalHalfSideTitle"> {titleSub2} </p>
                     <div className="modalHalfSideImageArea">
-                        <p className="modalHalfSideText"> spring 프레임워크를 활용하여 처음으로 데이터를 불러오고 쓰는 것을 익혔다. </p>
-                        <p className="modalHalfSideText"> 또한 JSP를 사용하는 방법을 배웠다. </p>
+                        <p className="modalHalfSideText"> spring 프레임워크를 활용하여 처음으로 데이터를 불러오고 쓰는 것을 익혔고 화면을 위한 html, css, javascript을 사용하는 방법을 익혔습니다. </p>
+                        <p className="modalHalfSideText"> JSP를 사용하는 방법을 배웠습니다. </p>
                     </div>
                 </div>
             </div> 
@@ -116,7 +119,7 @@ const Project_1 = ({number, titleSub1, titleSub2}) => {
                     className='swiper'
                     >
                         {
-                            screen.map((ele =>{
+                            screen[0].map((ele =>{
                                 return(
                                     <SwiperSlide id='slideWrap'>
                                         <div className='slideScreen'>
