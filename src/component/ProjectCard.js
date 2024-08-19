@@ -5,10 +5,10 @@ import { PiGearDuotone } from "react-icons/pi";
 import {useEffect, useState} from "react";
 import Modal from "./Modal.js";
 
-function ProjectCard({pIdx, title, period, img, width, detail1, detail2, environment}) {
+function ProjectCard({pIdx, title, period, img, width, detail1, detail2, environment, gitLink}) {
   const [isOpen, setIsOpen] = useState(false);
-  const [modalData,setModalData] = useState(null);
-  const [temp,setTemp] = useState(false);
+  // const [modalData,setModalData] = useState(null);
+  // const [temp,setTemp] = useState(false);
   if (isOpen) { // 모달시 스크롤 이벤트 막기
     document.body.style.overflow = 'hidden';
   } else {
@@ -17,22 +17,25 @@ function ProjectCard({pIdx, title, period, img, width, detail1, detail2, environ
   const imgWidth = {
     "width" : width
   }
-  const handleClick = (data) => {
-    setIsOpen(true);
-    setModalData(data);
-  };
-  const closeModal = () => {
-    setTemp(true);
-  };
-  useEffect(()=>{
-    setIsOpen(false);
-    setTemp(false);
-  },[temp])
+  const handleClick = () => {
+    window.location.href = "https://www.naver.com";
+  }
+  // const handleClick = (data) => {
+  //   setIsOpen(true);
+  //   setModalData(data);
+  // };
+  // const closeModal = () => {
+  //   setTemp(true);
+  // };
+  // useEffect(()=>{
+  //   setIsOpen(false);
+  //   setTemp(false);
+  // },[temp])
 
   const [isVisible, setIsVisible] = useState(false); // 상자의 가시성 상태를 관리
     const iconSize = 22;
     return (
-      <div className="projectCard" onClick={()=>handleClick({subtitle : title, pIdx : pIdx})} onMouseEnter={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
+      <div className="projectCard" onClick={() => window.location.href = gitLink} onMouseEnter={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
         <div className="projectCardTitle">
           <p className="projectCardTitleMain">{title}</p>
           <p className="projectCardTitleSub"> {period}</p>
@@ -75,7 +78,7 @@ function ProjectCard({pIdx, title, period, img, width, detail1, detail2, environ
             </ul>
           </div>
         </div>
-        <Modal isOpen={isOpen} closeModal={closeModal} data={modalData}/>
+        {/* <Modal isOpen={isOpen} closeModal={closeModal} data={modalData}/> */}
       </div>
     );
   }

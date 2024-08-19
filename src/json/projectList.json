@@ -13,7 +13,8 @@
           ["Backend", "Java, Spring"],
           ["Database", "Oracle"],
           ["Github", "https://github.com/ssssigun/Web-Omok"]
-        ]
+        ],
+        "Github" : "https://github.com/ssssigun/Web-Omok"
       },
       {
         "idx" : 2,
@@ -30,7 +31,8 @@
           ["Database", "MySQL"],
           ["Github", "https://github.com/ssssigun/Shinhan_DS_SW_Academy_Project"],
           ["Github", "https://github.com/ssssigun/SSO_final"]
-        ]
+        ],
+        "Github" : "https://github.com/ssssigun/Shinhan_DS_SW_Academy_Project"
       },
       {
         "idx" : 3,
@@ -46,7 +48,8 @@
           ["Backend", "Java, SpringBoot"],
           ["Database", "MySQL"],
           ["Github", "https://github.com/ssssigun/Shinhan_DS_SW_Academy_Project_Donation_Function"]
-        ]
+        ],
+        "Github" : "https://github.com/ssssigun/Shinhan_DS_SW_Academy_Project_Donation_Function"
       },
       {
         "idx" : 4,
@@ -62,6 +65,7 @@
           ["Github", "https://github.com/ssssigun/portfolio-page"],
           ["Deployment", "Github Pages"],
           ["URL", "https://ssssigun.github.io/portfolio-page/"]
-        ]
+        ],
+        "Github" : "https://github.com/ssssigun/portfolio-page"
       }
     ]
