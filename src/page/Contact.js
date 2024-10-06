@@ -17,6 +17,6 @@ const Contact = forwardRef((props, ref) =>{
       </div>
     </div>
   );
-});   
+});
   
   export default Contact;
